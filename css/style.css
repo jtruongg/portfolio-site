@@ -1,8 +1,44 @@
-body {
-	font-family: 'Oxygen', 'sans-serif';
-	font-size: 16px;
-	line-height: 1.6px;
+/*HEADER*/
+.logo {
+	width:100px;
+	margin-top: 20px;
 }
+
+header {
+	display: inline-block;
+	width: 100%;
+}
+
+nav {
+	float:right;
+	margin-top:23px;
+	display: inline-block;
+}
+
+nav li {
+	float:left;
+	margin-left: 25px;
+}
+
+/*GENERAL*/
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.no-bullet {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*FONTS*/
 
 h1 {
 	font-size: 30px;
@@ -11,6 +47,10 @@ h1 {
 
 h2 {
 	font-size: 24px;
+}
+
+.column-4 h2{
+	font-size: 16px;
 }
 
 h3 {
@@ -59,27 +99,9 @@ button a {
 	text-decoration: none;
 }
 
-.container {
-	margin: 0 auto;
-}
-
-.container-block {
-	display: block;
-}
-
-.container-inline-block {
-	display: inline-block;
-}
-
-.container {
-	position: relative;
-	width: 1200px;
-	min-width: 360px;
-	max-width: 1200px;
-}
+/*CONTAINERS*/
 
 .wrapper {
-	min-width: 360px;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -89,34 +111,53 @@ button a {
 	font-size: 0;
 }
 
+.columns-container img{
+	max-width: 100%;
+}
+
 .column-4 {
-	width: 25%;
+	font-size: 16px;
+	width: 24.25%;
 	display: inline-block;
 	margin-right: 1%;
 	text-align: center;
 }
 
-.navigation {
-	list-style-type: none;
-	display: inline-block;
-	float:right;
+.column-4:last-child {
+	margin-right:0;
 }
 
-.navigation > li {
-	display: inline-block;
-	margin-left: 10px;
+/*Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991px) {
 }
 
-@media all and (max-width: 500px) {
+/*Small devices (landscape phones, less than 768px)*/
+
+@media (max-width: 767px) {
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media screen and (max-width: 575px) {
+	header {
+		text-align: center;
+	}
 	.logo {
-		height: 50px;
+		width:150px;
 	}
-	h1{
-		font-size: 24px;
-		text-align: left;
+	nav {
+		float:none;
 	}
-	.column-4{
-		width: 49%;
-		margin-right: 1%;
+	nav li{
+		margin: 0 10px;
+	}
+	.wrapper {
+		padding: 0 10px;
+	}
+	.column-4 {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
 	}
 }
