@@ -153,8 +153,8 @@ button a {
 
 @media (max-width: 991px) {
 	.column-4 {
-		width: 50%;
-		margin-right: 0;
+		width: 48%;
+		margin-right: 10px;
 		margin-bottom: 20px;
 	}
 }
