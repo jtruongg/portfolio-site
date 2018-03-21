@@ -36,6 +36,13 @@ body {
 	list-style-type:none;
 	margin:0;
 	padding:0;
+	display: inline-block;
+}
+
+.icon {
+	width:25px;
+	margin-top: 20px;
+	display: inline-block;
 }
 
 /*FONTS*/
@@ -56,6 +63,9 @@ h2 {
 h3 {
 	font-size: 18px;
 }
+
+/*CTA*/
+
 
 a {
 	color: #0BA8D0;
@@ -79,12 +89,14 @@ button,
 .button,
 a.button {
 	background-color: #0BA8D0;
-	font-size: 16px;
+	font-size: 14px;
 	color: white;
-	padding: 10px;
-	border-radius: 3px;
+	padding: 8px;
+	margin: 5px auto;
+	border-radius: 2px;
 	font-family: inherit;
-	border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #D3D3D3;
+	text-decoration: none;
 }
 
 button:hover,
@@ -105,6 +117,17 @@ button a {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+.contact-info{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.container{
+	padding: 0 300px;
 }
 
 .columns-container {
@@ -130,6 +153,11 @@ button a {
 /*Medium devices (tablets, less than 992px)*/
 
 @media (max-width: 991px) {
+	.column-4 {
+		width: 50%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -148,6 +176,7 @@ button a {
 	}
 	nav {
 		float:none;
+		width: 100%;
 	}
 	nav li{
 		margin: 0 10px;
