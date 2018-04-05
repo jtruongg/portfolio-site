@@ -241,9 +241,14 @@ a.button:focus {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	margin: 0; /* Reset this to 0 */
 	padding: 80px 10px;
 	background: rgba(49, 49, 49, 0.8);
 	color: #ffffff;
+}
+
+.project-preview{
+	position: relative;
+	display: grid;
 }
